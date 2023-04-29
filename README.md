@@ -33,22 +33,38 @@ Output: in "grepable" format `-oG *results*`
 ## Shodan
 
 Open a web browser and navigate to https://shodan.io 
+
 Start searching for anything you can think of, some examples below (and you can combine multiple search terms into one search
-Domain names (umd.edu)
+
+Domain names (`umd.edu`)
+
 IP addresses
-Services (ssh, telnet)
-Banners (“OpenSSH”, “SSH-1.99”)
-net:XX.XX.XX.XX/YY
-port:443
-http.status:200
-org:Stanford
-country:US
-title:cyberspacekittens
-apache city:“College Park” (Find Apache servers in College Park)
-cisco country:”JP” (Find cisco equipment in Japan)
-"default password" (Find devices with the default login credentials still set.)
-ssh -port:22 (Find SSH on non-standard ports)
-vuln:CVE-2023-27350 (Search for a specific vulnerability - Paid/Academic accounts only)
+
+Services (`ssh`, `telnet`)
+
+Banners (`“OpenSSH”`, `“SSH-1.99”`)
+
+`net:XX.XX.XX.XX/YY`
+
+`port:443`
+
+`http.status:200`
+
+`org:Stanford`
+
+`country:US`
+
+`title:cyberspacekittens`
+
+`apache city:“College Park”` (Find Apache servers in College Park)
+
+`cisco country:”JP”` (Find cisco equipment in Japan)
+
+`"default password"` (Find devices with the default login credentials still set.)
+
+`ssh -port:22` (Find SSH on non-standard ports)
+
+`vuln:CVE-2023-27350` (Search for a specific vulnerability - Paid/Academic accounts only)
 
 ## BloodHound
 
