@@ -1,4 +1,4 @@
-# ASM
+# ASM - Attack Surface Management
 Content for the Attack Surface Management workshop at Educause CPPC 2023
 
 Sample nmap searches
