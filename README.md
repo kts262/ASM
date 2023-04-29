@@ -1,7 +1,7 @@
 # ASM - Attack Surface Management
 Content for the Attack Surface Management workshop at Educause CPPC 2023
 
-Sample nmap searches
+## Sample nmap searches
 
 nmap target
 nmap -p22 target
@@ -15,12 +15,12 @@ nmap -p443 --script ssl-enum-ciphers target
 
 Output: in "grepable" format -oG results
 
-Manipulating nmap -oG output
+## Manipulating nmap -oG output
 
-grep 445/open results
-grep 445/open results | awk ‘{ print $2}’
+`grep 445/open results`
+`grep 445/open results | awk ‘{ print $2}’`
 
-Shodan
+## Shodan
 
 Open a web browser and navigate to https://shodan.io 
 Start searching for anything you can think of, some examples below (and you can combine multiple search terms into one search
@@ -40,7 +40,7 @@ cisco country:”JP” (Find cisco equipment in Japan)
 ssh -port:22 (Find SSH on non-standard ports)
 vuln:CVE-2023-27350 (Search for a specific vulnerability - Paid/Academic accounts only)
 
-BloodHound
+## BloodHound
 
 sudo apt-get install bloodhound
 sudo neo4j console
@@ -48,7 +48,7 @@ http://localhost:7474/ (user neo4j, password neo4j - you will be asked to change
 bloodhound
 wget https://github.com/kts262/ASM/raw/main/20230422184725_BloodHound.zip
 
-AWS CLI queries
+## AWS CLI queries
 
 aws s3api get-bucket-policy-status --bucket "bucket" 
 aws s3api get-bucket-policy-status --bucket "bucket" --query "PolicyStatus.IsPublic"
