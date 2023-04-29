@@ -1,6 +1,7 @@
 # ASM - Attack Surface Management
 Content for the Attack Surface Management workshop at Educause CPPC 2023
 
+
 ## Sample nmap searches
 
 `nmap target`
@@ -24,11 +25,12 @@ Content for the Attack Surface Management workshop at Educause CPPC 2023
 
 Output: in "grepable" format `-oG *results*`
 
-## Manipulating nmap -oG output
+### Manipulating nmap -oG output
 
 `grep 445/open *results*`
 
 `grep 445/open *results* | awk ‘{ print $2}’`
+
 
 ## Shodan
 
@@ -65,6 +67,7 @@ Banners (`“OpenSSH”`, `“SSH-1.99”`)
 `ssh -port:22` (Find SSH on non-standard ports)
 
 `vuln:CVE-2023-27350` (Search for a specific vulnerability - Paid/Academic accounts only)
+
 
 ## BloodHound
 
