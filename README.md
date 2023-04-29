@@ -3,22 +3,32 @@ Content for the Attack Surface Management workshop at Educause CPPC 2023
 
 ## Sample nmap searches
 
-nmap target
-nmap -p22 target
-nmap -p22 -sV target
-nmap –p 443 --script ssl-enum-ciphers target
-nmap –p 22 --script “ssh*” target
-nmap –p 135-139,445 --script smb-os-discovery target
-nmap –p 80,443 --script “ssl-*,http-*” target
-nmap --script smb-os-discovery target
-nmap -p443 --script ssl-enum-ciphers target
+`nmap target`
 
-Output: in "grepable" format -oG results
+`nmap -p22 *target*`
+
+`nmap -p22 -sV *target*`
+
+`nmap –p 443 --script ssl-enum-ciphers *target*`
+
+`nmap –p 22 --script “ssh*” *target*`
+
+`nmap –p 135-139,445 --script smb-os-discovery *target*`
+
+`nmap –p 80,443 --script “ssl-*,http-*” *target*`
+
+`nmap --script smb-os-discovery *target*`
+
+`nmap -p443 --script ssl-enum-ciphers *target*`
+
+
+Output: in "grepable" format `-oG *results*`
 
 ## Manipulating nmap -oG output
 
-`grep 445/open results`
-`grep 445/open results | awk ‘{ print $2}’`
+`grep 445/open *results*`
+
+`grep 445/open *results* | awk ‘{ print $2}’`
 
 ## Shodan
 
@@ -42,15 +52,22 @@ vuln:CVE-2023-27350 (Search for a specific vulnerability - Paid/Academic account
 
 ## BloodHound
 
-sudo apt-get install bloodhound
-sudo neo4j console
-http://localhost:7474/ (user neo4j, password neo4j - you will be asked to change the password, don't forget it!)
-bloodhound
-wget https://github.com/kts262/ASM/raw/main/20230422184725_BloodHound.zip
+`sudo apt-get install bloodhound`
+
+`sudo neo4j console`
+
+http://localhost:7474/ (user `neo4j`, password `neo4j` - you will be asked to change the password, don't forget it!)
+
+`bloodhound`
+
+`wget https://github.com/kts262/ASM/raw/main/20230422184725_BloodHound.zip`
 
 ## AWS CLI queries
 
-aws s3api get-bucket-policy-status --bucket "bucket" 
-aws s3api get-bucket-policy-status --bucket "bucket" --query "PolicyStatus.IsPublic"
+`aws s3api get-bucket-policy-status --bucket "*bucket*"`
 
-aws ec2 describe-instances --filters "Name=instance-state-name,Values=running" --query 'Reservations[*].Instances[*].[PublicIpAddress]' --region region
+`aws s3api get-bucket-policy-status --bucket "*bucket*" --query "PolicyStatus.IsPublic"`
+
+
+
+`aws ec2 describe-instances --filters "Name=instance-state-name,Values=running" --query 'Reservations[*].Instances[*].[PublicIpAddress]' --region *region*`
