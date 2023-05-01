@@ -1,6 +1,8 @@
 # ASM - Attack Surface Management
 Content for the Attack Surface Management workshop at Educause CPPC 2023
 
+##Submit your findings here: https://forms.gle/RSEorumSMFMBno8i9
+
 
 ## Sample nmap searches
 
