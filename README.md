@@ -94,3 +94,10 @@ http://localhost:7474/ (user `neo4j`, password `neo4j` - you will be asked to ch
 
 
 `aws ec2 describe-instances --filters "Name=instance-state-name,Values=running" --query 'Reservations[*].Instances[*].[PublicIpAddress]' --region *region*`
+
+
+## Contacts
+
+Brian Marksham - bmarkham@eab.com
+
+Kevin Shivers - kts@umd.edu
